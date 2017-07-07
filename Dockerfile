@@ -4,6 +4,6 @@ RUN apt-get update && apt-get install -yq software-properties-common
 RUN add-apt-repository ppa:neovim-ppa/stable
 
 RUN apt-get update \
-  && apt-get intall -yq \
+  && apt-get install -yq \
     neovim \
     git
