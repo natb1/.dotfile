@@ -1,1 +1,9 @@
-FROM alpine:3.6
+FROM ubuntu:xenial
+
+RUN apt-get update && apt-get install -yq software-properties-common
+RUN add-apt-repository ppa:neovim-ppa/stable
+
+RUN apt-get update \
+  && apt-get intall -yq \
+    neovim \
+    git
