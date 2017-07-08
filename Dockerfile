@@ -11,3 +11,5 @@ RUN apt-get update \
 
 ADD . /root
 WORKDIR /local
+
+CMD nvim
