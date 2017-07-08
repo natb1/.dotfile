@@ -7,3 +7,6 @@ RUN apt-get update \
   && apt-get install -yq \
     neovim \
     git
+
+ADD . /root
+WORKDIR /local
