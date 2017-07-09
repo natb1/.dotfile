@@ -10,4 +10,4 @@ inoremap jj <Esc>
 tnoremap jj <C-\><C-n>
 
 " shortcut to open a shell
-nnoremap <Leader>s :split +terminal\ zsh<CR>
+nnoremap <Leader>s :botrigh split +terminal\ zsh<CR>
