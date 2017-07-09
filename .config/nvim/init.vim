@@ -9,5 +9,8 @@ nnoremap <Leader>y <C-y>
 inoremap jj <Esc>
 tnoremap jj <C-\><C-n>
 
-" shortcut to open a shell
+" open a shell
 nnoremap <Leader>s :botrigh split +terminal\ zsh<CR>
+
+" zoom in to current window
+nnoremap <Leader>z :tabnew %<CR>
