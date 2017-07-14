@@ -2,6 +2,7 @@
 
 ```
 docker run --rm \
+  --net=host \
   -v $PWD:$PWD \
   -v $HOME/.ssh:/root/.ssh \
   -v $HOME/.gitconfig:/root/.gitconfig \
