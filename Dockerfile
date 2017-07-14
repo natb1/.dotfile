@@ -23,6 +23,5 @@ RUN apt-get update \
     git
 
 ADD . /root
-WORKDIR /local
 
 CMD nvim

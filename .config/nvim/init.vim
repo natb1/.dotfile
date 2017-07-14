@@ -1,3 +1,12 @@
+" tree view is the default in netrw
+let g:netrw_liststyle= 3
+
+"
+set colorcolumn=80
+
+"
+set expandtab
+
 " map ctrl keys used by chrome to the leader key
 nnoremap <Leader>n <C-n>
 nnoremap <Leader>t <C-t>
@@ -10,7 +19,10 @@ inoremap jj <Esc>
 tnoremap jj <C-\><C-n>
 
 " open a shell
-nnoremap <Leader>s :botrigh split +terminal\ zsh<CR>
+nnoremap <Leader>s :botright split <BAR> terminal zsh<CR>
+
+" execute a shell command
+nnoremap <Leader>c :botright split <BAR> terminal 
 
 " zoom in to current window
 nnoremap <Leader>z :tabnew %<CR>
