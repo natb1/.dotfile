@@ -1,10 +1,8 @@
-" tree view is the default in netrw
-let g:netrw_liststyle= 3
+" make tree view the default in netrw
+let g:netrw_liststyle=3
 
-"
+" global code style stuff
 set colorcolumn=80
-
-"
 set expandtab
 
 " map ctrl keys used by chrome to the leader key
@@ -15,7 +13,7 @@ nnoremap <Leader>w <C-w>
 nnoremap <Leader>y <C-y>
 
 " mappings to get into normal mode
-inoremap jj <Esc>
+noremap jj <Esc>
 tnoremap jj <C-\><C-n>
 
 " open a shell
@@ -26,3 +24,6 @@ nnoremap <Leader>c :botright split <BAR> terminal
 
 " zoom in to current window
 nnoremap <Leader>z :tabnew %<CR>
+
+" open explorer tab at directory (and cd to that directory)
+command! -nargs=1 -complete=file -bar CDExplore tabedit | lcd <args> | Explore
