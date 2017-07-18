@@ -13,7 +13,7 @@ nnoremap <Leader>w <C-w>
 nnoremap <Leader>y <C-y>
 
 " mappings to get into normal mode
-noremap jj <Esc>
+inoremap jj <Esc>
 tnoremap jj <C-\><C-n>
 
 " open a shell
@@ -27,3 +27,4 @@ nnoremap <Leader>z :tabnew %<CR>
 
 " open explorer tab at directory (and cd to that directory)
 command! -nargs=1 -complete=file -bar CDExplore tabedit | lcd <args> | Explore
+nnoremap <Leader>t :CDExplore 
