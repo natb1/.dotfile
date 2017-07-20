@@ -4,6 +4,7 @@ let g:netrw_liststyle=3
 " global code style stuff
 set colorcolumn=80
 set expandtab
+set number
 
 " map ctrl keys used by chrome to the leader key
 nnoremap <Leader>n <C-n>
