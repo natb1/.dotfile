@@ -27,4 +27,4 @@ nnoremap <Leader>z :tabnew %<CR>
 
 " open explorer tab at directory (and cd to that directory)
 command! -nargs=1 -complete=file -bar CDExplore tabedit | lcd <args> | Explore
-nnoremap <Leader>t :CDExplore 
+nnoremap <Leader>t :CDExplore ~/
