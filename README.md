@@ -19,6 +19,12 @@ docker run --rm \
   -v $HOME/.gitconfig:/root/.gitconfig \
   -v /var/run/docker.sock:/var/run/docker.sock \
   -e DISPLAY=$(ifconfig en0 | grep "inet " | cut -d " " -f 2):0 \
+  -e WORKDIR=$PWD \
   -w $PWD \
   -it natb1/dotfiles
+```
+
+## build
+```
+docker build -t natb1/dotfiles .
 ```

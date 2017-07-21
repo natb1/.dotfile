@@ -23,6 +23,13 @@ RUN apt-get update \
     git \
     xclip
 
+RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+ADD .config/nvim /root/.config/nvim
+
+RUN vim +PlugInstall +qall
+
 ADD . /root
 
 CMD nvim

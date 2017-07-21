@@ -1,3 +1,7 @@
+call plug#begin('~/.local/share/nvim/plugged')
+Plug 'altercation/vim-colors-solarized'
+call plug#end()
+
 " make tree view the default in netrw
 let g:netrw_liststyle=3
 
@@ -5,6 +9,8 @@ let g:netrw_liststyle=3
 set colorcolumn=80
 set expandtab
 set number
+
+set autoread
 
 " map ctrl keys used by chrome to the leader key
 nnoremap <Leader>n <C-n>
@@ -28,4 +34,4 @@ nnoremap <Leader>z :tabnew %<CR>
 
 " open explorer tab at directory (and cd to that directory)
 command! -nargs=1 -complete=file -bar CDExplore tabedit | lcd <args> | Explore
-nnoremap <Leader>t :CDExplore ~/
+nnoremap <Leader>t :CDExplore $WORKDIR/
