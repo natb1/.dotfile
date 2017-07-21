@@ -20,7 +20,8 @@ RUN apt-get update \
     docker-ce \
     zsh \
     neovim \
-    git
+    git \
+    xclip
 
 ADD . /root
 
