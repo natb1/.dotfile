@@ -1,5 +1,6 @@
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'altercation/vim-colors-solarized'
+Plug 'dracula/vim'
 call plug#end()
 
 " make tree view the default in netrw
