@@ -30,6 +30,14 @@ ADD .config/nvim /root/.config/nvim
 
 RUN vim +PlugInstall +qall
 
+RUN curl -LO curl -LO https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl \
+    && chmod +x ./kubectl \
+    && mv ./kubectl /usr/local/bin/kubectl
+
+RUN curl -s https://packagecloud.io/install/repositories/datawireio/telepresence/script.deb.sh \
+    | bash \
+    && apt install -y --no-install-recommends telepresence sudo
+
 ADD . /root
 
 CMD nvim

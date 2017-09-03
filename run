@@ -1,0 +1,16 @@
+#!/bin/bash -x
+
+docker run --rm \
+  --net=host \
+  --cap-add SYS_ADMIN \
+  --device /dev/fuse \
+  --privileged \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v $PWD:$PWD \
+  -w $PWD \
+  -e WORKDIR=$PWD \
+  -v $HOME/.ssh:/root/.ssh \
+  -v $HOME/.gitconfig:/root/.gitconfig \
+  -v $HOME/.kube:/root/.kube \
+  -e DISPLAY=$(ifconfig en0 | grep "inet " | cut -d " " -f 2):0 \
+  -it natb1/dotfiles $@

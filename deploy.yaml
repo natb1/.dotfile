@@ -1,0 +1,15 @@
+apiVersion: apps/v1beta1 # for versions before 1.6.0 use extensions/v1beta1
+kind: Deployment
+metadata:
+  name: nate-dev
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: dev
+    spec:
+      containers:
+      - name: nate-dev
+        image: natb1/dotfiles
+        command: ["tail", "-f", "/dev/null"]
