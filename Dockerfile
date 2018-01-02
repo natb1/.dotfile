@@ -27,8 +27,13 @@ RUN apk add --no-cache \
     torsocks \
     sshfs \
     conntrack-tools \
+    socat \
+    sudo \
     && git clone https://github.com/datawire/telepresence.git /opt/telepresence
 ENV PATH /opt/telepresence/cli:$PATH
+
+RUN touch /root/.zshrc
+RUN sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)" || echo
 
 ADD . /root
 
