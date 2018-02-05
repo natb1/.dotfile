@@ -1,19 +1,18 @@
 # dotfiles
 
+Nate's personal dockerized development environment.
+
 ## OSX
 To get an X11 server:
 ```
 brew install socat
 brew cask install xquartz
 ```
-In an xterm:
-```
-socat TCP-LISTEN:6000,reuseaddr,fork UNIX-CLIENT:\"$DISPLAY\"
-```
 
 ## run
+CD to working directory, then:
 ```
-./run
+$PATH_TO_DOTFILES/run
 ```
 
 ## build
