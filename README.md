@@ -10,6 +10,10 @@ brew cask install xquartz
 ```
 
 ## run
+Initialize configuration/cache "volumes" (only neeed to do this once):
+```
+mkdir -p ~/.ssh ~/.gitconfig ~/.kube ~/.docker ~/.config/gcloud ~/.ivy2 ~/.cache ~/.coursier
+```
 CD to working directory, then:
 ```
 $PATH_TO_DOTFILES/run

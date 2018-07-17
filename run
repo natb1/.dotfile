@@ -17,8 +17,13 @@ docker run --rm \
   -v $HOME/.kube:/root/.kube \
   -v $HOME/.docker:/root/.docker \
   -v $HOME/.config/gcloud:/root/.config/gcloud \
+  -v $HOME/.m2:/root/.m2 \
+  -v $HOME/.ivy2:/root/.ivy2 \
+  -v $HOME/.coursier:/root/.coursier \
+  -v $HOME/.cache:/root/.cache \
   -e DISPLAY=$(ifconfig en0 | grep "inet " | cut -d " " -f 2):1 \
   -e XAUTHORITY=/tmp/xauth \
+  -P \
   -it natb1/dotfiles $@
 
 kill $SOCAT
