@@ -1,0 +1,2 @@
+#!/usr/bin/env zsh
+git --git-dir=$HOME/.dotfile/ --work-tree=$HOME $@

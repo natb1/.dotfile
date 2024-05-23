@@ -1,0 +1,7 @@
+[init]
+	defaultBranch = main
+[user]
+	email = nathan@natb1.com
+	name = nate
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/

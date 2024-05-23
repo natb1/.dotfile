@@ -1,0 +1,8 @@
+{
+  "LazyVim": { "branch": "main", "commit": "530e94a9fa19577401e968a9673282c3d79f01e3" },
+  "lazy.nvim": { "branch": "main", "commit": "28126922c9b54e35a192ac415788f202c3944c9f" },
+  "neoscroll.nvim": { "branch": "master", "commit": "e78657719485c5663b88e5d96ffcfb6a2fe3eec0" },
+  "vim-closetag": { "branch": "master", "commit": "d0a562f8bdb107a50595aefe53b1a690460c3822" },
+  "vim-colors-lucid": { "branch": "master", "commit": "4efacf11f4bda195a4dd2612a87515a2ebd6b3a0" },
+  "vim-go": { "branch": "master", "commit": "0e975560df38be387cca1d7d33df7a4744091303" }
+}

@@ -1,0 +1,5 @@
+#!/usr/bin/env zsh
+
+# https://web.archive.org/web/20090208232311/http://student.northpark.edu/pemente/awk/awk1line.txt
+# reverse order of lines (emulates "tac")
+awk '{a[i++]=\$0} END {for (j=i-1; j>=0;) print a[j--] }'
