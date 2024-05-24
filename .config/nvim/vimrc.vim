@@ -15,7 +15,6 @@ autocmd BufNewFile,BufRead *.go setlocal foldmethod=syntax
 
 autocmd FileType go nmap <leader>h  :call go#lsp#Exit()
 autocmd FileType go nmap <leader>b  <Plug>(go-build)
-autocmd FileType go nmap <leader>r  <Plug>(go-run)
 autocmd FileType go nmap <leader>t  <Plug>(go-test)
 autocmd FileType go nmap  <leader>p ofmt.Printf("====== %+v\n", )<Esc>$
 let g:go_fmt_command = "goimports"
