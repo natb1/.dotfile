@@ -3,5 +3,7 @@
 [user]
 	email = nathan@natb1.com
 	name = nate
-[url "ssh://git@github.com/"]
-	insteadOf = https://github.com/
+[credential "https://github.com"]
+	helper = !/run/current-system/sw/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = !/run/current-system/sw/bin/gh auth git-credential
